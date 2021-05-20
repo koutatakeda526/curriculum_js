@@ -1,4 +1,7 @@
+let a = 5;
 console.log(a !== 10);
+
+let b = 16;
 console.log(10 <= b < 20 && b % 2 === 0 );
 
 let x = 10;
