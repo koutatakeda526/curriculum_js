@@ -5,7 +5,7 @@ let b = 16;
 console.log(10 <= b < 20 && b % 2 === 0 );
 
 let x = 10;
-if(10 <= x <= 20) {
+if(10 <= x && x <= 20) {
     console.log('成功です');
 } else {
     console.log('失敗です');
