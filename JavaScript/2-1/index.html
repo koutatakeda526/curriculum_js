@@ -10,17 +10,22 @@
             height: 100px;
             background-color: blue;
         }
+
+        #box:hover {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+        }
     </style>
 </head>
 <body>
-    <div id="box">
-        
-    </div>
+    <div id="box"></div>
     <script>
         //問題①：idで要素を取得して、背景色を赤色に変更する処理を記述してください。
         function changeBoxColor( newColor ) {
     document.getElementById('box').style.backgroundColor = newColor;
 }
+
        
 </script>
 </html>
