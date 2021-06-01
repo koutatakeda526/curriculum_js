@@ -31,12 +31,12 @@
     // ボタンがクリックされたら、という処理の始まり
     btn.addEventListener('click', function() {
         //①配列で「大吉」「中吉」「凶」を準備
-        let omikuji = {"大吉", "中吉", "凶"}
+        let results = ['大吉', '中吉', '凶'];
         //②乱数を発生させて、その値を取得
-        
+        var omikuji = Math.floor(Math.random() * results.length);
         
         //③取得した **btn** の「クリック」という文字を配列の中身の文字にランダムに変化させる
-        
+        document.getElementById("btn").innerHTML = results[omikuji];
     }, false);
     </script>
 </body>
