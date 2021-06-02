@@ -15,19 +15,22 @@
     <script>   
     function addText() {
         //①入力欄のテキストを取得
-        
+        let text = document.getElementById('text1').value;
         //②出力欄のテキストエリアを取得
-        
+        document.getElementById('area1').value += text + "\n";
         //③出力欄に入力された文字列を足していく
         
-    }
+        }
 
     function deleteText() {
         //④出力欄のテキストを空にする
-        
+        let textForm1 = document.getElementById("area1");
+        textForm1.value = '';
         //⑤入力欄のテキストを空にする
-        
-    }
+        let textForm2 = document.getElementById("text1");
+        textForm2.value = '';
+        }
+
     </script>
 </body>
 </html>
